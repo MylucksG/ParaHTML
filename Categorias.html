@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title>Lista de Herramientas</title>
+	<style>
+		.tool {
+			display: inline-block;
+			width: 30%;
+			margin: 5px;
+            padding: 15px;
+            margin-bottom: 30px; /* Añade un margen inferior de 20px */
+			text-align: center;
+            box-shadow: 10px 10px 10px rgba(6, 1, 80, 0.1);
+		}
+        .tool p {
+	        text-align: justify;
+            color: #333;
+            padding: 10px;
+
+
+}
+
+		.tool img {
+			max-width: 70%;
+			height: auto;
+            transition: all 0.2s ease-in-out; /* Agrega una transición suave al cambio de estilo */
+}
+
+        .tool img:hover {
+            max-width: 75%; /* Aumenta la anchura al 100% */
+            opacity: 0.8; /* Agrega un efecto de opacidad para que se vea más destacado */
+            cursor: pointer; /* Cambia el cursor a una mano para indicar que la imagen es clickable */
+        }
+		
+
+		.filter {
+			text-align: center;
+			margin: 10px;
+		}
+
+        .filter button {
+            font-size: 15px;
+            padding: 5px;
+            margin: 5px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out; /* Agrega una transición suave al cambio de estilo */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .filter button:hover {
+            background-color: #e951ee; /* Cambia el color de fondo al pasar el cursor */
+            color: white; /* Cambia el color del texto a blanco para contrastar mejor */
+            transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor */
+            font-weight: bold; /* Añade letra negrita */
+        }
+
+        .filter button:focus {
+            background-color: #18ca9e; /* Mantiene el color de fondo al seleccionar */
+            outline: none; /* Quita el borde que aparece al seleccionar */
+            transform: scale(1.1); /* Aumenta el tamaño del botón al seleccionar */
+            font-weight: bold; /* Añade letra negrita */
+            color: white; /* Cambia el color del texto a blanco para contrastar mejor */
+}
+	</style>
+</head>
+<body>
+
+	<div class="filter">
+		<button onclick="filterTools('all')">Todos</button>
+		<button onclick="filterTools('categoria1')">Buscadores</button>
+		<button onclick="filterTools('categoria2')">Chats</button>
+		<button onclick="filterTools('categoria3')">Imagenes</button>
+	</div>
+
+     <!-----------------------------------------CATEGORIA 1-------------------------------------------->
+	<div id="tools">
+		<div class="tool categoria1">
+            <a href="/perplexity"target="_blank"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/perplexity-m7VEyJ3JqDs4vqG5.JPG">
+            </a>
+            <h3>Perplexity</h3>
+			<p>Perplexity AI es un buscador conversacional que utiliza inteligencia artificial para proporcionar respuestas precisas a preguntas complejas.</p>
+		</div>
+        <div class="tool categoria1">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/you-YD0jOMel7RfLowek.JPG">
+            </a>
+            <h3>YOU</h3>
+			<p>Es un buscador basado en inteligencia artificial que ofrece a los usuarios una experiencia de búsqueda personalizada y respeta su privacidad.</p>
+		</div>
+        <div class="tool categoria1">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/phind-Yan2Wpk2W2U9Do0E.JPG">
+            </a>
+            <h3>phind</h3>
+			<p>Es un buscador de inteligencia artificial para desarrolladores. Phind está impulsado por grandes modelos de lenguaje artificial</p>
+		</div>
+        <div class="tool categoria1">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/bing-d95EewxQRpH6Xvr8.png">
+            </a>
+            <h3>Bing</h3>
+			<p>Es el buscador de Microsoft, que también se beneficia de las capacidades de inteligencia artificial.</p>
+		</div>   
+
+
+        <!-----------------------------------------CATEGORIA 2-------------------------------------------->
+		<div class="tool categoria2">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/chatgpt-2-A1agy7xZl8ubN4ja.png">
+            </a>
+            <h3>ChatGPT</h3>
+			<p>ChatGPT es un sistema de chat basado en el modelo de lenguaje por Inteligencia Artificial GPT-3, desarrollado por la empresa OpenAI.</p>
+		</div> 
+		<div class="tool categoria2">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/pi-m6L4KeK5LetPVRPz.png">
+            </a>
+            <h3>PI</h3>
+			<p>Heypi es un chatbot de inteligencia artificial que se presenta como tu asistente personal.</p>
+		</div>  
+
+        <!-----------------------------------------CATEGORIA 3-------------------------------------------->       
+        <div class="tool categoria3">
+            <a href="pagina.html"> <!--Dirige a otra pagina al hacer clik-->
+			    <img src="https://assets.zyrosite.com/YbNblB0X20uW06qM/lexica-mp8Xkr9kO7ubrrZo.png">
+            </a>
+            <h3>Lexica</h3>
+			<p>Lexica es una aplicación que permite generar imágenes con Inteligencia Artificial a partir de palabras clave.</p>
+		</div>  
+
+        
+		<!-- Agregar más herramientas aquí -->
+	</div>
+
+	<script>
+		function filterTools(categoria) {
+			var tools = document.getElementById("tools").querySelectorAll(".tool");
+			if (categoria == "all") {
+				for (var i = 0; i < tools.length; i++) {
+					tools[i].style.display = "inline-block";
+				}
+			} else {
+				for (var i = 0; i < tools.length; i++) {
+					if (tools[i].classList.contains(categoria)) {
+						tools[i].style.display = "inline-block";
+					} else {
+						tools[i].style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
+
+</body>
+</html
